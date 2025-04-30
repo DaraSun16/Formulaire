@@ -34,7 +34,7 @@
 <br><br><br>
 
 
-<form class="container mt-5" action="traitement.php" method="post">
+<form class="container mt-5 border border-2 border-dark bg-dark text-light" action="traitement.php" method="post">
   <div class="mb-3">
     <label for="nom" class="form-label">Nom: </label>
     <input type="text" class="form-control" id="nom" name="nom" required>
@@ -51,8 +51,8 @@
     <option value="3">Corée</option>
 </select>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  <button type="reset" class="btn btn-secondary">Reset</button>
+  <button type="submit" class="btn btn-primary mb-3">Submit</button>
+  <button type="reset" class="btn btn-secondary mb-3">Reset</button>
 </div>
 </form>
 
