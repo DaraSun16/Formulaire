@@ -34,14 +34,19 @@
 <br><br><br>
 
 
-<form class="container mt-5 border border-2 border-dark bg-dark text-light" action="traitement.php" method="post">
+<form class="container mt-5 border border-2 border-dark bg-dark text-light was-validated" action="traitement.php" method="post">
+  <h2 class="text-center">Formulaire de contact</h1>
   <div class="mb-3">
     <label for="nom" class="form-label">Nom: </label>
-    <input type="text" class="form-control" id="nom" name="nom" required>
+    <input type="text" class="form-control" id="nom" name="nom" placeholder="Max" required>
+    <div class="invalid-feedback">
+      Entrez votre nom
+    </div>
   </div>
   <div class="mb-3">
     <label for="Message" class="form-label">Message: </label>
-    <input type="message" class="form-control" id="message" name="message" required>
+    <input type="text" class="form-control" id="message" name="message" required>
+    <div class="invalid-feedback">Ecrivez un message</div>
   </div>
   <div class="mb-3 form-check">
     <select class="form-select" aria-label="Pays" id="pays" name="pays">
@@ -50,11 +55,13 @@
     <option value="2">Japon</option>
     <option value="3">Corée</option>
 </select>
+  <div class="invalid-feedback">Sélectionner votre pays</div>
   </div>
-  <button type="submit" class="btn btn-primary mb-3">Submit</button>
+  <button type="submit" class="btn btn-primary mb-3 mx-3">Submit</button>
   <button type="reset" class="btn btn-secondary mb-3">Reset</button>
 </div>
 </form>
+<br><br><br>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
